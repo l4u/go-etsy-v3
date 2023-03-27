@@ -1,0 +1,356 @@
+# ShopShippingProfileShippingProfileDestinationsInner
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**ShippingProfileDestinationId** | Pointer to **int32** | The numeric ID of the shipping profile destination in the [shipping profile](/documentation/reference#tag/Shop-ShippingProfile) associated with the listing. | [optional] 
+**ShippingProfileId** | Pointer to **int32** | The numeric ID of the shipping profile. | [optional] 
+**OriginCountryIso** | Pointer to **string** | The ISO code of the country from which the listing ships. | [optional] 
+**DestinationCountryIso** | Pointer to **string** | The ISO code of the country to which the listing ships. If null, request sets destination to destination_region. Required if destination_region is null or not provided. | [optional] 
+**DestinationRegion** | Pointer to **string** | The code of the region to which the listing ships. A region represents a set of countries. Supported regions are Europe Union and Non-Europe Union (countries in Europe not in EU). If \\&#x60;none\\&#x60;, request sets destination to destination_country_iso. Required if destination_country_iso is null or not provided. | [optional] 
+**PrimaryCost** | Pointer to [**ShopShippingProfileDestinationPrimaryCost**](ShopShippingProfileDestinationPrimaryCost.md) |  | [optional] 
+**SecondaryCost** | Pointer to [**ShopShippingProfileDestinationSecondaryCost**](ShopShippingProfileDestinationSecondaryCost.md) |  | [optional] 
+**ShippingCarrierId** | Pointer to **NullableInt32** | The unique ID of a supported shipping carrier, which is used to calculate an Estimated Delivery Date. **Required with &#x60;mail_class&#x60;** if &#x60;min_delivery_days&#x60; and &#x60;max_delivery_days&#x60; are null. | [optional] 
+**MailClass** | Pointer to **NullableString** | The unique ID string of a shipping carrier&#39;s mail class, which is used to calculate an estimated delivery date. **Required with &#x60;shipping_carrier_id&#x60;** if &#x60;min_delivery_days&#x60; and &#x60;max_delivery_days&#x60; are null. | [optional] 
+**MinDeliveryDays** | Pointer to **NullableInt32** | The minimum number of business days a buyer can expect to wait to receive their purchased item once it has shipped. **Required with &#x60;max_delivery_days&#x60;** if &#x60;mail_class&#x60; is null. | [optional] 
+**MaxDeliveryDays** | Pointer to **NullableInt32** | The maximum number of business days a buyer can expect to wait to receive their purchased item once it has shipped. **Required with &#x60;min_delivery_days&#x60;** if &#x60;mail_class&#x60; is null. | [optional] 
+
+## Methods
+
+### NewShopShippingProfileShippingProfileDestinationsInner
+
+`func NewShopShippingProfileShippingProfileDestinationsInner() *ShopShippingProfileShippingProfileDestinationsInner`
+
+NewShopShippingProfileShippingProfileDestinationsInner instantiates a new ShopShippingProfileShippingProfileDestinationsInner object
+This constructor will assign default values to properties that have it defined,
+and makes sure properties required by API are set, but the set of arguments
+will change when the set of required properties is changed
+
+### NewShopShippingProfileShippingProfileDestinationsInnerWithDefaults
+
+`func NewShopShippingProfileShippingProfileDestinationsInnerWithDefaults() *ShopShippingProfileShippingProfileDestinationsInner`
+
+NewShopShippingProfileShippingProfileDestinationsInnerWithDefaults instantiates a new ShopShippingProfileShippingProfileDestinationsInner object
+This constructor will only assign default values to properties that have it defined,
+but it doesn't guarantee that properties required by API are set
+
+### GetShippingProfileDestinationId
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetShippingProfileDestinationId() int32`
+
+GetShippingProfileDestinationId returns the ShippingProfileDestinationId field if non-nil, zero value otherwise.
+
+### GetShippingProfileDestinationIdOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetShippingProfileDestinationIdOk() (*int32, bool)`
+
+GetShippingProfileDestinationIdOk returns a tuple with the ShippingProfileDestinationId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetShippingProfileDestinationId
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetShippingProfileDestinationId(v int32)`
+
+SetShippingProfileDestinationId sets ShippingProfileDestinationId field to given value.
+
+### HasShippingProfileDestinationId
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasShippingProfileDestinationId() bool`
+
+HasShippingProfileDestinationId returns a boolean if a field has been set.
+
+### GetShippingProfileId
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetShippingProfileId() int32`
+
+GetShippingProfileId returns the ShippingProfileId field if non-nil, zero value otherwise.
+
+### GetShippingProfileIdOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetShippingProfileIdOk() (*int32, bool)`
+
+GetShippingProfileIdOk returns a tuple with the ShippingProfileId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetShippingProfileId
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetShippingProfileId(v int32)`
+
+SetShippingProfileId sets ShippingProfileId field to given value.
+
+### HasShippingProfileId
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasShippingProfileId() bool`
+
+HasShippingProfileId returns a boolean if a field has been set.
+
+### GetOriginCountryIso
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetOriginCountryIso() string`
+
+GetOriginCountryIso returns the OriginCountryIso field if non-nil, zero value otherwise.
+
+### GetOriginCountryIsoOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetOriginCountryIsoOk() (*string, bool)`
+
+GetOriginCountryIsoOk returns a tuple with the OriginCountryIso field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOriginCountryIso
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetOriginCountryIso(v string)`
+
+SetOriginCountryIso sets OriginCountryIso field to given value.
+
+### HasOriginCountryIso
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasOriginCountryIso() bool`
+
+HasOriginCountryIso returns a boolean if a field has been set.
+
+### GetDestinationCountryIso
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetDestinationCountryIso() string`
+
+GetDestinationCountryIso returns the DestinationCountryIso field if non-nil, zero value otherwise.
+
+### GetDestinationCountryIsoOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetDestinationCountryIsoOk() (*string, bool)`
+
+GetDestinationCountryIsoOk returns a tuple with the DestinationCountryIso field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDestinationCountryIso
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetDestinationCountryIso(v string)`
+
+SetDestinationCountryIso sets DestinationCountryIso field to given value.
+
+### HasDestinationCountryIso
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasDestinationCountryIso() bool`
+
+HasDestinationCountryIso returns a boolean if a field has been set.
+
+### GetDestinationRegion
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetDestinationRegion() string`
+
+GetDestinationRegion returns the DestinationRegion field if non-nil, zero value otherwise.
+
+### GetDestinationRegionOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetDestinationRegionOk() (*string, bool)`
+
+GetDestinationRegionOk returns a tuple with the DestinationRegion field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDestinationRegion
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetDestinationRegion(v string)`
+
+SetDestinationRegion sets DestinationRegion field to given value.
+
+### HasDestinationRegion
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasDestinationRegion() bool`
+
+HasDestinationRegion returns a boolean if a field has been set.
+
+### GetPrimaryCost
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetPrimaryCost() ShopShippingProfileDestinationPrimaryCost`
+
+GetPrimaryCost returns the PrimaryCost field if non-nil, zero value otherwise.
+
+### GetPrimaryCostOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetPrimaryCostOk() (*ShopShippingProfileDestinationPrimaryCost, bool)`
+
+GetPrimaryCostOk returns a tuple with the PrimaryCost field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPrimaryCost
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetPrimaryCost(v ShopShippingProfileDestinationPrimaryCost)`
+
+SetPrimaryCost sets PrimaryCost field to given value.
+
+### HasPrimaryCost
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasPrimaryCost() bool`
+
+HasPrimaryCost returns a boolean if a field has been set.
+
+### GetSecondaryCost
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetSecondaryCost() ShopShippingProfileDestinationSecondaryCost`
+
+GetSecondaryCost returns the SecondaryCost field if non-nil, zero value otherwise.
+
+### GetSecondaryCostOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetSecondaryCostOk() (*ShopShippingProfileDestinationSecondaryCost, bool)`
+
+GetSecondaryCostOk returns a tuple with the SecondaryCost field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSecondaryCost
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetSecondaryCost(v ShopShippingProfileDestinationSecondaryCost)`
+
+SetSecondaryCost sets SecondaryCost field to given value.
+
+### HasSecondaryCost
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasSecondaryCost() bool`
+
+HasSecondaryCost returns a boolean if a field has been set.
+
+### GetShippingCarrierId
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetShippingCarrierId() int32`
+
+GetShippingCarrierId returns the ShippingCarrierId field if non-nil, zero value otherwise.
+
+### GetShippingCarrierIdOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetShippingCarrierIdOk() (*int32, bool)`
+
+GetShippingCarrierIdOk returns a tuple with the ShippingCarrierId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetShippingCarrierId
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetShippingCarrierId(v int32)`
+
+SetShippingCarrierId sets ShippingCarrierId field to given value.
+
+### HasShippingCarrierId
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasShippingCarrierId() bool`
+
+HasShippingCarrierId returns a boolean if a field has been set.
+
+### SetShippingCarrierIdNil
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetShippingCarrierIdNil(b bool)`
+
+ SetShippingCarrierIdNil sets the value for ShippingCarrierId to be an explicit nil
+
+### UnsetShippingCarrierId
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) UnsetShippingCarrierId()`
+
+UnsetShippingCarrierId ensures that no value is present for ShippingCarrierId, not even an explicit nil
+### GetMailClass
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetMailClass() string`
+
+GetMailClass returns the MailClass field if non-nil, zero value otherwise.
+
+### GetMailClassOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetMailClassOk() (*string, bool)`
+
+GetMailClassOk returns a tuple with the MailClass field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMailClass
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetMailClass(v string)`
+
+SetMailClass sets MailClass field to given value.
+
+### HasMailClass
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasMailClass() bool`
+
+HasMailClass returns a boolean if a field has been set.
+
+### SetMailClassNil
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetMailClassNil(b bool)`
+
+ SetMailClassNil sets the value for MailClass to be an explicit nil
+
+### UnsetMailClass
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) UnsetMailClass()`
+
+UnsetMailClass ensures that no value is present for MailClass, not even an explicit nil
+### GetMinDeliveryDays
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetMinDeliveryDays() int32`
+
+GetMinDeliveryDays returns the MinDeliveryDays field if non-nil, zero value otherwise.
+
+### GetMinDeliveryDaysOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetMinDeliveryDaysOk() (*int32, bool)`
+
+GetMinDeliveryDaysOk returns a tuple with the MinDeliveryDays field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMinDeliveryDays
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetMinDeliveryDays(v int32)`
+
+SetMinDeliveryDays sets MinDeliveryDays field to given value.
+
+### HasMinDeliveryDays
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasMinDeliveryDays() bool`
+
+HasMinDeliveryDays returns a boolean if a field has been set.
+
+### SetMinDeliveryDaysNil
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetMinDeliveryDaysNil(b bool)`
+
+ SetMinDeliveryDaysNil sets the value for MinDeliveryDays to be an explicit nil
+
+### UnsetMinDeliveryDays
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) UnsetMinDeliveryDays()`
+
+UnsetMinDeliveryDays ensures that no value is present for MinDeliveryDays, not even an explicit nil
+### GetMaxDeliveryDays
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetMaxDeliveryDays() int32`
+
+GetMaxDeliveryDays returns the MaxDeliveryDays field if non-nil, zero value otherwise.
+
+### GetMaxDeliveryDaysOk
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) GetMaxDeliveryDaysOk() (*int32, bool)`
+
+GetMaxDeliveryDaysOk returns a tuple with the MaxDeliveryDays field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMaxDeliveryDays
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetMaxDeliveryDays(v int32)`
+
+SetMaxDeliveryDays sets MaxDeliveryDays field to given value.
+
+### HasMaxDeliveryDays
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) HasMaxDeliveryDays() bool`
+
+HasMaxDeliveryDays returns a boolean if a field has been set.
+
+### SetMaxDeliveryDaysNil
+
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) SetMaxDeliveryDaysNil(b bool)`
+
+ SetMaxDeliveryDaysNil sets the value for MaxDeliveryDays to be an explicit nil
+
+### UnsetMaxDeliveryDays
+`func (o *ShopShippingProfileShippingProfileDestinationsInner) UnsetMaxDeliveryDays()`
+
+UnsetMaxDeliveryDays ensures that no value is present for MaxDeliveryDays, not even an explicit nil
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

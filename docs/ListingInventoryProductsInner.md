@@ -1,0 +1,160 @@
+# ListingInventoryProductsInner
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**ProductId** | Pointer to **int32** | The numeric ID for a specific [product](/documentation/reference#tag/ShopListing-Product) purchased from a listing. | [optional] 
+**Sku** | Pointer to **string** | The SKU string for the product | [optional] 
+**IsDeleted** | Pointer to **bool** | When true, someone deleted this product. | [optional] 
+**Offerings** | Pointer to [**[]ListingInventoryProductOfferingsInner**](ListingInventoryProductOfferingsInner.md) | A list of product offering entries for this product. | [optional] 
+**PropertyValues** | Pointer to [**[]ListingInventoryProductPropertyValuesInner**](ListingInventoryProductPropertyValuesInner.md) | A list of property value entries for this product. Note: parenthesis characters (&#x60;(&#x60; and &#x60;)&#x60;) are not allowed. | [optional] 
+
+## Methods
+
+### NewListingInventoryProductsInner
+
+`func NewListingInventoryProductsInner() *ListingInventoryProductsInner`
+
+NewListingInventoryProductsInner instantiates a new ListingInventoryProductsInner object
+This constructor will assign default values to properties that have it defined,
+and makes sure properties required by API are set, but the set of arguments
+will change when the set of required properties is changed
+
+### NewListingInventoryProductsInnerWithDefaults
+
+`func NewListingInventoryProductsInnerWithDefaults() *ListingInventoryProductsInner`
+
+NewListingInventoryProductsInnerWithDefaults instantiates a new ListingInventoryProductsInner object
+This constructor will only assign default values to properties that have it defined,
+but it doesn't guarantee that properties required by API are set
+
+### GetProductId
+
+`func (o *ListingInventoryProductsInner) GetProductId() int32`
+
+GetProductId returns the ProductId field if non-nil, zero value otherwise.
+
+### GetProductIdOk
+
+`func (o *ListingInventoryProductsInner) GetProductIdOk() (*int32, bool)`
+
+GetProductIdOk returns a tuple with the ProductId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetProductId
+
+`func (o *ListingInventoryProductsInner) SetProductId(v int32)`
+
+SetProductId sets ProductId field to given value.
+
+### HasProductId
+
+`func (o *ListingInventoryProductsInner) HasProductId() bool`
+
+HasProductId returns a boolean if a field has been set.
+
+### GetSku
+
+`func (o *ListingInventoryProductsInner) GetSku() string`
+
+GetSku returns the Sku field if non-nil, zero value otherwise.
+
+### GetSkuOk
+
+`func (o *ListingInventoryProductsInner) GetSkuOk() (*string, bool)`
+
+GetSkuOk returns a tuple with the Sku field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSku
+
+`func (o *ListingInventoryProductsInner) SetSku(v string)`
+
+SetSku sets Sku field to given value.
+
+### HasSku
+
+`func (o *ListingInventoryProductsInner) HasSku() bool`
+
+HasSku returns a boolean if a field has been set.
+
+### GetIsDeleted
+
+`func (o *ListingInventoryProductsInner) GetIsDeleted() bool`
+
+GetIsDeleted returns the IsDeleted field if non-nil, zero value otherwise.
+
+### GetIsDeletedOk
+
+`func (o *ListingInventoryProductsInner) GetIsDeletedOk() (*bool, bool)`
+
+GetIsDeletedOk returns a tuple with the IsDeleted field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetIsDeleted
+
+`func (o *ListingInventoryProductsInner) SetIsDeleted(v bool)`
+
+SetIsDeleted sets IsDeleted field to given value.
+
+### HasIsDeleted
+
+`func (o *ListingInventoryProductsInner) HasIsDeleted() bool`
+
+HasIsDeleted returns a boolean if a field has been set.
+
+### GetOfferings
+
+`func (o *ListingInventoryProductsInner) GetOfferings() []ListingInventoryProductOfferingsInner`
+
+GetOfferings returns the Offerings field if non-nil, zero value otherwise.
+
+### GetOfferingsOk
+
+`func (o *ListingInventoryProductsInner) GetOfferingsOk() (*[]ListingInventoryProductOfferingsInner, bool)`
+
+GetOfferingsOk returns a tuple with the Offerings field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOfferings
+
+`func (o *ListingInventoryProductsInner) SetOfferings(v []ListingInventoryProductOfferingsInner)`
+
+SetOfferings sets Offerings field to given value.
+
+### HasOfferings
+
+`func (o *ListingInventoryProductsInner) HasOfferings() bool`
+
+HasOfferings returns a boolean if a field has been set.
+
+### GetPropertyValues
+
+`func (o *ListingInventoryProductsInner) GetPropertyValues() []ListingInventoryProductPropertyValuesInner`
+
+GetPropertyValues returns the PropertyValues field if non-nil, zero value otherwise.
+
+### GetPropertyValuesOk
+
+`func (o *ListingInventoryProductsInner) GetPropertyValuesOk() (*[]ListingInventoryProductPropertyValuesInner, bool)`
+
+GetPropertyValuesOk returns a tuple with the PropertyValues field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPropertyValues
+
+`func (o *ListingInventoryProductsInner) SetPropertyValues(v []ListingInventoryProductPropertyValuesInner)`
+
+SetPropertyValues sets PropertyValues field to given value.
+
+### HasPropertyValues
+
+`func (o *ListingInventoryProductsInner) HasPropertyValues() bool`
+
+HasPropertyValues returns a boolean if a field has been set.
+
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
